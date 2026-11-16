@@ -1,21 +1,25 @@
-# Galeria i zmiany mechaniczne
+# Galeria — prototyp i detale montażu
 
-## Fotografie rzeczywistego prototypu
+## Prawdziwe zdjęcia
 
-Oryginalne fotografie użytkownika nie są dostępne w lokalnej kopii MSI, dlatego nie dodaję kolejnych placeholderów. Poniżej pozostają wyłącznie diagramy SVG.
+**Jeszcze nieopublikowane.** Folder `assets/images/` nie zawiera fotografii urządzenia. Zdjęcia z budowy były pokazywane w rozmowie, ale nie zostały zapisane w tym repozytorium.
 
-![Schemat obudowy](../assets/enclosure.svg)
+Docelowo znajdą się tutaj ujęcia otwartej lampki, zbliżenie elektroniki i ogniwa 18650, przejście przewodu antenowego oraz zamknięty prototyp. Bez grafik udających rzeczywisty sprzęt.
 
-## Przeprowadzenie przewodu antenowego
+## Rysunki poglądowe
 
-Złącze przewodu antenowego zostało osadzone **w istniejącym otworze po śrubie służącej do montażu lampy na ścianie**. Połączenie pozwala wyprowadzić antenę poza obudowę bez wiercenia dodatkowego otworu w tym miejscu.
+Te ilustracje pomagają wyjaśnić pomysł, ale **nie pokazują faktycznego wyglądu ani jakości montażu**.
 
-![Detal przejścia SMA](../assets/antenna-detail.svg)
+![Rysunek obudowy lampy — ilustracja](../assets/enclosure.svg)
 
-**Stan prototypu — 16 listopada 2026:** czarna obudowa lampy, panel 1 W, zewnętrzna antena na krótkiej podstawie i przewód SMA. Materiał fotograficzny z przebiegu montażu został wykonany; fotografia w repozytorium będzie oznaczana jako *rzeczywisty prototyp*, a diagramy jako *rysunki poglądowe*. Dotychczasowe schematy nie dowodzą szczelności.
+![Rysunek przejścia antenowego — ilustracja](../assets/antenna-detail.svg)
 
-## Rejestr prób radiowych
+Przewód antenowy został poprowadzony przez istniejący otwór po śrubie mocującej lampę do ściany. Przejście wymaga jeszcze uszczelnienia i odciążenia mechanicznego.
 
-![Wyniki testu](../assets/field-test.svg)
+## Test łączności
 
-Odczyty z ekranu administratora i pingów są udokumentowane w [dzienniku pomiarów](measurements-pl.md). Nie należy traktować wyglądu lampy jako certyfikacji IP po przeróbce.
+![Wizualne zestawienie wyników — nie screenshot](../assets/field-test.svg)
+
+Dane z pomiarów i ich ograniczenia: [dziennik prób](measurements-pl.md).
+
+*Stan dokumentacji: 16 listopada 2026. Sam wygląd obudowy nie potwierdza szczelności po przeróbce.*
