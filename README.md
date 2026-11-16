@@ -20,7 +20,7 @@
 To dokumentacja **rzeczywiście uruchomionego prototypu**, a nie gotowy produkt. Firmware działa, komunikacja radiowa jest potwierdzona; całoroczna autonomiczność energetyczna i szczelność po przeróbkach nadal wymagają testów.
 
 <table>
-<tr><td width="50%"><strong>01 / Obudowa i panel</strong><p>Niewielka ścienna lampa solarna została wykorzystana jako baza mechaniczna z panelem 1 W.</p><img src="assets/enclosure.svg" alt="Schemat obudowy i wyprowadzenia anteny" width="100%"></td><td width="50%"><strong>02 / Antena na zewnątrz</strong><p>Przewód antenowy i gniazdo SMA wyprowadzone przez istniejący <strong>otwór montażowy po śrubie</strong>, bez wiercenia nowego otworu w tym miejscu.</p><img src="assets/antenna-detail.svg" alt="Detal wyprowadzenia anteny" width="100%"></td></tr>
+<tr><td width="50%"><strong>01 / Obudowa i panel</strong><p><a href="assets/images/repeater-enclosure-original.jpg"><img src="assets/images/repeater-enclosure-original.jpg" alt="Rzeczywiste zdjęcie obudowy repeatera" width="220"></a></p><p>Niewielka ścienna lampa solarna została wykorzystana jako baza mechaniczna z panelem 1 W.</p><img src="assets/enclosure.svg" alt="Schemat obudowy i wyprowadzenia anteny" width="100%"></td><td width="50%"><strong>02 / Antena na zewnątrz</strong><p><a href="assets/images/antenna-mount-original.jpg"><img src="assets/images/antenna-mount-original.jpg" alt="Rzeczywiste zdjęcie kabla wyprowadzonego przez otwór montażowy" width="220"></a></p><p>Przewód antenowy i gniazdo SMA wyprowadzone przez istniejący <strong>otwór montażowy po śrubie</strong>, bez wiercenia nowego otworu w tym miejscu.</p><img src="assets/antenna-detail.svg" alt="Detal wyprowadzenia anteny" width="100%"></td></tr>
 </table>
 
 ## W skrócie
