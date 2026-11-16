@@ -1,94 +1,68 @@
-<p align="center">
-  <img src="assets/banner.svg" width="100%" alt="MeshCore Solar Repeater 1 W">
-</p>
+# MeshCore Solar Repeater — lampka solarna 1 W
 
-<p align="center">
-  <a href="README.md"><strong>PL</strong></a> · <a href="README.en.md">EN</a>
-</p>
+**Działający prototyp repeatera LoRa 868 MHz zbudowany w obudowie niedużej lampy solarnej.** Bez drukowanej obudowy i bez oddzielnego panelu na maszcie. Chciałem sprawdzić, ile można wycisnąć z taniego, gotowego korpusu i jednego ogniwa 18650.
 
-# Repeater MeshCore z lampy solarnej
+[English version](README.en.md) · [Budowa](docs/hardware-pl.md) · [Pomiary](docs/measurements-pl.md) · [Galeria i rysunki](docs/gallery-pl.md)
 
-**1 W panelu, mała obudowa i radio LoRa 868 MHz.** Chciałem zbudować repeater, który zmieści się w zwykłej lampce solarnej, będzie można go zostawić w terenie i nie będzie wymagał codziennego ładowania. Tak powstał ten prototyp.
+![Nagłówek projektu — ilustracja poglądowa, nie fotografia](assets/banner.svg)
 
-W środku pracuje **Seeed XIAO nRF52840** z **Wio-SX1262**. Oprogramowanie MeshCore zmodyfikowałem o profil **RXPS Balanced**, żeby radio nie musiało bez przerwy pracować w pełnym nasłuchu. To na razie etap prób: łączność działa, ale bilans energii i odbiór pakietów muszą przejść dłuższy test.
+> **Stan na 16 listopada 2026:** prototyp odpowiada na bezpośredni ping i jest dostępny z telefonu. Długoterminowa praca wyłącznie z panelu 1 W **nie została jeszcze potwierdzona**.
 
-## Budowa
+## Jak to wygląda w praktyce
 
-### Obudowa
+W lampce znalazło się radio **Seeed XIAO nRF52840 + Wio-SX1262**. Panel słoneczny ma deklarowaną moc 1 W, a pierwsze testy wykonuję z jednym ogniwem 18650. Zewnętrzny przewód antenowy przechodzi przez **oryginalny otwór po śrubie montażowej** — w tym miejscu nie trzeba było wiercić nowego otworu.
 
-Wykorzystałem obudowę gotowej lampy ściennej z małym panelem słonecznym. Oryginalny układ oświetlenia zastąpiła elektronika repeatera. Panel ma deklarowaną moc **1 W**.
+**Zdjęcia prawdziwego urządzenia nie są jeszcze przesłane do repozytorium.** Nie zastępuję ich renderami. Poniżej są wyraźnie oznaczone rysunki pomocnicze.
 
-![Schemat obudowy lampki](assets/enclosure.svg)
+![Poglądowy rysunek obudowy, nie zdjęcie prototypu](assets/enclosure.svg)
 
-### Antena
+![Schemat przejścia przewodu antenowego przez istniejący otwór](assets/antenna-detail.svg)
 
-Przewód antenowy wyprowadziłem przez **istniejący otwór po śrubie montażowej lampy**. Nie wierciłem dodatkowego otworu pod SMA. Antena stoi osobno na podstawie magnetycznej.
+## Części i ustawienia
 
-![Przejście anteny przez otwór montażowy](assets/antenna-detail.svg)
+- **Sterownik:** Seeed XIAO nRF52840
+- **Radio:** Wio-SX1262, pasmo 868 MHz
+- **Zasilanie:** panel lampy 1 W (moc deklarowana), na razie 1 × 18650
+- **Antena:** zewnętrzna, przewód ze złączem SMA
+- **Firmware:** MeshCore na bazie 1.18.0, z profilem RXPS Balanced (poziom 6)
+- **Radio:** 869,618 MHz · SF8 · BW 62,5 kHz · CR8 · preambuła 16 symboli
 
-Przejście kabla trzeba jeszcze odciążyć mechanicznie i uszczelnić. To, że oryginalna lampa miała oznaczenie odporności na warunki atmosferyczne, nie oznacza, że po przeróbce zachowała tę samą szczelność.
+W konfiguracji RXPS zapisano **49,329 ms nasłuchu i 23,757 ms uśpienia**. To ustawienia czasowe, **nie pomiar poboru prądu**. Nie zakładam też, że ograniczenie czasu nasłuchu nie wpływa na odbiór pakietów.
 
-### Podzespoły
+## Pierwszy sprawdzony test
 
-| Część | Zastosowanie |
-|---|---|
-| Seeed XIAO nRF52840 | Sterownik |
-| Wio-SX1262 | Moduł LoRa |
-| Antena 868 MHz z przewodem SMA | Wyniesiona antena zewnętrzna |
-| Obudowa lampy solarnej | Panel i miejsce na elektronikę |
-| Panel 1 W | Ładowanie w dzień |
-| Ogniwo 18650 | Zasilanie podczas nocnych testów |
+**16.11.2026, 22:58 — łączność bezpośrednia, 0 hop:**
 
-Dwa ogniwa równolegle (1S2P) są rozważane na dalszy etap. Przed rozbudową trzeba potwierdzić zabezpieczenie i sposób ładowania.
-
-## Oprogramowanie
-
-Na repeaterze działa MeshCore oparty na wydaniu **1.18.0** z RXPS Balanced, poziom 6 i preambułą 16 symboli.
-
-**Parametry radia:** 869,618 MHz · SF8 · BW62,5 kHz · CR8.
-
-Cykle RXPS z odczytu urządzenia: **49,329 ms odbioru / 23,757 ms uśpienia**. Te czasy nie są pomiarem pobieranego prądu. Firmware zachowuje funkcje repeatera, CLI i dostęp administratora; zerowych strat pakietów jeszcze nie potwierdziłem.
-
-[Opis firmware](docs/firmware-pl.md) · [Firmware in English](docs/firmware-en.md)
-
-## Pierwszy test radiowy
-
-![Zestawienie wyników pomiaru](assets/field-test.svg)
-
-16 listopada 2026 o **22:58** telefon potwierdził ping bezpośredni (0 hop) do repeatera.
-
-| Parametr | Wynik |
-|---|---:|
-| Napięcie akumulatora | **3,85 V** |
-| Wskazanie naładowania w aplikacji | 70% |
-| Ping 0 hop | **1044 ms** |
-| SNR w kierunku repeatera | 11,75 dB |
-| SNR powrotny | 12,0 dB |
+| Odczyt | Wynik |
+|:--|--:|
+| Ping | 1044 ms |
+| SNR w jedną / drugą stronę | 11,75 / 12,0 dB |
+| Napięcie ogniwa | 3,85 V |
+| Stan w aplikacji | 70% |
 | Pakiety odebrane / wysłane | 15 / 7 |
 | Błędy odbioru | 1 |
 
-To punkt początkowy testu zasilania akumulatorowego, **a nie dowód na czas pracy panelu 1 W**. Wcześniejszy odczyt 4,17 V wykonano w innych warunkach zasilania — nie należy traktować różnicy jako szybkiego rozładowania.
+To krótki test radiowy, **nie test autonomii solarnej**. Wskazanie 70% z aplikacji nie zastępuje pomiaru pojemności ogniwa.
 
-[Pełny dziennik pomiarów](docs/measurements-pl.md)
+![Grafika z odczytami testu — nie zrzut z aplikacji](assets/field-test.svg)
 
-## Co jeszcze sprawdzam
+[Dokładniejsze wyniki i warunki pomiaru](docs/measurements-pl.md)
 
-- [x] Złożenie i uruchomienie prototypu
-- [x] Wyprowadzenie anteny przez otwór montażowy
-- [x] RXPS Balanced na działającym repeaterze
-- [x] Ping i dostęp administracyjny z iPhone'a
-- [ ] 7–14 dni pracy na panelu 1 W
-- [ ] Pomiar prądu przy różnych trybach nasłuchu
-- [ ] Test strat pakietów i stabilności połączenia
-- [ ] Uszczelnienie i uporządkowanie mocowania przewodu
-- [ ] Ewentualne przejście na dwa ogniwa 18650
+## Co zostało do zrobienia
 
-## Dokumentacja projektu
+- [x] Uruchomienie repeatera
+- [x] Połączenie i ping z iPhone’a
+- [x] Wyprowadzenie anteny przez istniejący otwór
+- [ ] Dodanie **prawdziwych zdjęć** wnętrza, obudowy i zamkniętego prototypu
+- [ ] Pomiar prądu i 7–14 dni prób zasilania solarnego
+- [ ] Sprawdzenie strat pakietów i zasięgu
+- [ ] Uszczelnienie przejścia przewodu i sprawdzenie odporności obudowy
+- [ ] Weryfikacja ładowania oraz ewentualnej rozbudowy do 1S2P
 
-**[Budowa](docs/hardware-pl.md)** · **[Firmware](docs/firmware-pl.md)** · **[Zasilanie](docs/power-budget-pl.md)** · **[Pomiary](docs/measurements-pl.md)** · **[Galeria](docs/gallery-pl.md)** · **[Bezpieczeństwo](docs/safety-pl.md)**
+## Notatki z budowy
 
-[English documentation](README.en.md)
+[Hardware](docs/hardware-pl.md) · [Firmware](docs/firmware-pl.md) · [Budżet energii](docs/power-budget-pl.md) · [Dziennik pomiarów](docs/measurements-pl.md) · [Galeria](docs/gallery-pl.md) · [Bezpieczeństwo](docs/safety-pl.md)
 
----
+**Uwaga:** po ingerencji w lampkę nie traktuję jej fabrycznej deklaracji szczelności jako aktualnej. Akumulator Li-ion wymaga właściwego zabezpieczenia i ładowania, szczególnie w niskiej temperaturze.
 
-Projekt wykorzystuje [MeshCore](https://github.com/meshcore-dev/MeshCore). Dokumentuję własną przeróbkę sprzętu; nie jest to oficjalna konstrukcja ani firmware projektu MeshCore.
+Projekt bazuje na [MeshCore](https://github.com/meshcore-dev/MeshCore). To prywatny eksperyment DIY, nie oficjalny projekt MeshCore.
