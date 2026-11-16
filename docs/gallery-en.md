@@ -1,15 +1,25 @@
-# Build gallery
+# Build gallery — prototype and assembly notes
 
-## Actual prototype photos
+## Real hardware photographs
 
-The original user photographs are not available in the local MSI copy, so no additional placeholders are being added. The verified SVG diagrams remain below.
+**Not uploaded yet.** The repository's `assets/images/` folder does not currently contain any photographs. Build photos were shared in the project conversation, but they are not stored in this GitHub repository.
 
-![Enclosure diagram](../assets/enclosure.svg)
+The intended set: open solar-lamp case, close-ups of the electronics and 18650 cell, cable exit, and assembled enclosure. Illustrations will not be presented as actual photographs.
 
-The external antenna cable and SMA connector were routed through a **pre-existing wall-mount screw opening** in the reused solar-lamp enclosure. That avoids drilling an extra opening but does **not** certify the modified enclosure as waterproof.
+## Illustrative diagrams
 
-![Antenna pass-through detail](../assets/antenna-detail.svg)
+The following drawings explain the idea; **they are not evidence of how the actual build looks or how well it is sealed**.
 
-![Radio test snapshot](../assets/field-test.svg)
+![Illustrative enclosure drawing](../assets/enclosure.svg)
 
-Results and timestamps: [measurement log](measurements-en.md). Technical drawings are illustrative, while documented screenshots represent actual radio tests.
+![Illustrative antenna pass-through drawing](../assets/antenna-detail.svg)
+
+The external antenna cable uses an existing wall-mount screw hole. The opening still needs weather sealing and cable strain relief.
+
+## Radio test
+
+![Graphic summarizing test values — not a screenshot](../assets/field-test.svg)
+
+Actual measurements and their limitations: [test log](measurements-en.md).
+
+*Documentation status: 16 November 2026. The original weatherproofing rating is not verified after modification.*
