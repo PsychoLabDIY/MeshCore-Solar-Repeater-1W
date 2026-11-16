@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" role="img" aria-label="MeshCore solar repeater">
+  <defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#102a43"/><stop offset="1" stop-color="#147d92"/></linearGradient></defs>
+  <rect width="1200" height="300" rx="28" fill="url(#g)"/>
+  <circle cx="1030" cy="82" r="42" fill="#ffd166"/><path d="M1030 18v-18M1030 164v-18M966 82h-18M1112 82h-18M985 37l-13-13M1075 127l-13-13M1075 37l13-13M985 127l-13 13" stroke="#ffd166" stroke-width="8" stroke-linecap="round"/>
+  <path d="M135 204l82-48 82 48-82 48z" fill="#79c2d0" stroke="#d9f0f5" stroke-width="5"/><path d="M217 156v96M135 204h164" stroke="#d9f0f5" stroke-width="3"/>
+  <path d="M217 116v40M217 116l-22-24M217 116l22-24" stroke="#ffd166" stroke-width="5" fill="none"/>
+  <path d="M325 142q34 30 0 60M350 124q58 48 0 96" fill="none" stroke="#ffd166" stroke-width="6" stroke-linecap="round"/>
+  <text x="430" y="125" fill="white" font-family="Segoe UI,Arial" font-size="48" font-weight="700">MeshCore Solar Repeater</text>
+  <text x="433" y="180" fill="#d9f0f5" font-family="Segoe UI,Arial" font-size="25">XIAO nRF52840 · Wio-SX1262 · 1 W concept</text>
+  <text x="433" y="223" fill="#ffd166" font-family="Consolas,monospace" font-size="21">RXPS balanced · measured facts first</text>
+</svg>
+

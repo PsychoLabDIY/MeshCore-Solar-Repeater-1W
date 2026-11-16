@@ -1,0 +1,17 @@
+.pio/
+.venv/
+*.elf
+*.bin
+*.hex
+*.uf2
+*.zip
+*.key
+*.pem
+*.secret
+prefs/
+secrets/
+data/raw/
+*.sqlite3
+__pycache__/
+.DS_Store
+
