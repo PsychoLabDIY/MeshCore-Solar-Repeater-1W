@@ -1,25 +1,27 @@
-# Galeria — prototyp i detale montażu
+# Galeria
 
-## Prawdziwe zdjęcia
+[← Strona główna](../README.md) · [English](gallery-en.md)
 
-**Jeszcze nieopublikowane.** Folder `assets/images/` nie zawiera fotografii urządzenia. Zdjęcia z budowy były pokazywane w rozmowie, ale nie zostały zapisane w tym repozytorium.
+## Repeater
 
-Docelowo znajdą się tutaj ujęcia otwartej lampki, zbliżenie elektroniki i ogniwa 18650, przejście przewodu antenowego oraz zamknięty prototyp. Bez grafik udających rzeczywisty sprzęt.
+![Repeater MeshCore w obudowie solarnej](../assets/images/antenna.webp)
 
-## Rysunki poglądowe
+## Obudowa
 
-Te ilustracje pomagają wyjaśnić pomysł, ale **nie pokazują faktycznego wyglądu ani jakości montażu**.
+![Obudowa lampy z podłączonym przewodem antenowym](../assets/images/repeater.webp)
 
-![Rysunek obudowy lampy — ilustracja](../assets/enclosure.svg)
+## Panel i antena
 
-![Rysunek przejścia antenowego — ilustracja](../assets/antenna-detail.svg)
+![Panel solarny i antena magnetyczna](../assets/images/panel.webp)
 
-Przewód antenowy został poprowadzony przez istniejący otwór po śrubie mocującej lampę do ściany. Przejście wymaga jeszcze uszczelnienia i odciążenia mechanicznego.
+## Detal złącza SMA
 
-## Test łączności
+![Wyprowadzenie złącza antenowego z obudowy](../assets/images/connector.webp)
 
-![Wizualne zestawienie wyników — nie screenshot](../assets/field-test.svg)
+## Wnętrze
 
-Dane z pomiarów i ich ograniczenia: [dziennik prób](measurements-pl.md).
+![Akumulator 18650 i uporządkowane okablowanie](../assets/images/interior.webp)
 
-*Stan dokumentacji: 16 listopada 2026. Sam wygląd obudowy nie potwierdza szczelności po przeróbce.*
+---
+
+[Parametry i wyniki testów](measurements-pl.md) · [Opis konstrukcji](hardware-pl.md)

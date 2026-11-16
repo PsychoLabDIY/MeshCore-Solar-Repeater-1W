@@ -1,25 +1,27 @@
-# Build gallery — prototype and assembly notes
+# Gallery
 
-## Real hardware photographs
+[← Main page](../README.en.md) · [Polski](gallery-pl.md)
 
-**Not uploaded yet.** The repository's `assets/images/` folder does not currently contain any photographs. Build photos were shared in the project conversation, but they are not stored in this GitHub repository.
+## Repeater
 
-The intended set: open solar-lamp case, close-ups of the electronics and 18650 cell, cable exit, and assembled enclosure. Illustrations will not be presented as actual photographs.
+![MeshCore solar repeater](../assets/images/antenna.webp)
 
-## Illustrative diagrams
+## Housing
 
-The following drawings explain the idea; **they are not evidence of how the actual build looks or how well it is sealed**.
+![Wall-lamp enclosure and antenna cable](../assets/images/repeater.webp)
 
-![Illustrative enclosure drawing](../assets/enclosure.svg)
+## Panel and antenna
 
-![Illustrative antenna pass-through drawing](../assets/antenna-detail.svg)
+![Solar panel and magnetic-base antenna](../assets/images/panel.webp)
 
-The external antenna cable uses an existing wall-mount screw hole. The opening still needs weather sealing and cable strain relief.
+## SMA connector
 
-## Radio test
+![External SMA antenna connector detail](../assets/images/connector.webp)
 
-![Graphic summarizing test values — not a screenshot](../assets/field-test.svg)
+## Inside
 
-Actual measurements and their limitations: [test log](measurements-en.md).
+![18650 battery and cable arrangement](../assets/images/interior.webp)
 
-*Documentation status: 16 November 2026. The original weatherproofing rating is not verified after modification.*
+---
+
+[Test results](measurements-en.md) · [Build details](hardware-en.md)
