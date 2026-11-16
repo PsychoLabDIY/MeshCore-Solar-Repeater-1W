@@ -1,12 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" role="img" aria-label="MeshCore solar repeater">
-  <defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#102a43"/><stop offset="1" stop-color="#147d92"/></linearGradient></defs>
-  <rect width="1200" height="300" rx="28" fill="url(#g)"/>
-  <circle cx="1030" cy="82" r="42" fill="#ffd166"/><path d="M1030 18v-18M1030 164v-18M966 82h-18M1112 82h-18M985 37l-13-13M1075 127l-13-13M1075 37l13-13M985 127l-13 13" stroke="#ffd166" stroke-width="8" stroke-linecap="round"/>
-  <path d="M135 204l82-48 82 48-82 48z" fill="#79c2d0" stroke="#d9f0f5" stroke-width="5"/><path d="M217 156v96M135 204h164" stroke="#d9f0f5" stroke-width="3"/>
-  <path d="M217 116v40M217 116l-22-24M217 116l22-24" stroke="#ffd166" stroke-width="5" fill="none"/>
-  <path d="M325 142q34 30 0 60M350 124q58 48 0 96" fill="none" stroke="#ffd166" stroke-width="6" stroke-linecap="round"/>
-  <text x="430" y="125" fill="white" font-family="Segoe UI,Arial" font-size="48" font-weight="700">MeshCore Solar Repeater</text>
-  <text x="433" y="180" fill="#d9f0f5" font-family="Segoe UI,Arial" font-size="25">XIAO nRF52840 · Wio-SX1262 · 1 W concept</text>
-  <text x="433" y="223" fill="#ffd166" font-family="Consolas,monospace" font-size="21">RXPS balanced · measured facts first</text>
-</svg>
-
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="390" viewBox="0 0 1200 390" role="img" aria-label="MeshCore Solar Repeater 1W — kompaktowy projekt LoRa z obudowy lampy solarnej">
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#0d1726"/><stop offset="1" stop-color="#142f37"/></linearGradient><linearGradient id="accent" x2="1"><stop stop-color="#22d3ee"/><stop offset="1" stop-color="#84cc16"/></linearGradient><pattern id="grid" width="33" height="33" patternUnits="userSpaceOnUse"><path d="M33 0H0V33" fill="none" stroke="#5c8395" stroke-opacity=".1"/></pattern><filter id="shadow"><feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#02040b" flood-opacity=".55"/></filter></defs>
+<rect width="1200" height="390" rx="18" fill="url(#bg)"/><rect width="1200" height="390" fill="url(#grid)"/><circle cx="1140" cy="20" r="270" fill="#0d9488" opacity=".075"/><path d="M46 66h75" stroke="url(#accent)" stroke-width="7" stroke-linecap="round"/>
+<text x="46" y="121" font-family="Arial, Helvetica, sans-serif" font-size="57" font-weight="800" fill="#f8fafc">MeshCore Solar</text><text x="46" y="185" font-family="Arial, Helvetica, sans-serif" font-size="57" font-weight="800" fill="#f8fafc">Repeater <tspan fill="#a3e635">1W</tspan></text>
+<text x="47" y="224" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#cbd5e1">Drugie życie lampy solarnej. Własny repeater LoRa.</text>
+<g font-family="Arial, Helvetica, sans-serif" font-size="17"><rect x="46" y="268" width="158" height="39" rx="20" fill="#173f4f" stroke="#3a9bb5"/><text x="68" y="293" fill="#d8faff">868 MHz LoRa</text><rect x="219" y="268" width="165" height="39" rx="20" fill="#173f4f" stroke="#3a9bb5"/><text x="244" y="293" fill="#d8faff">RXPS Balanced</text><rect x="400" y="268" width="151" height="39" rx="20" fill="#26442e" stroke="#638b42"/><text x="427" y="293" fill="#d5f4be">Ping 0-hop ✓</text></g>
+<text x="46" y="359" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#7d97a4">Seeed XIAO nRF52840  ·  Wio-SX1262  ·  18650 Li-ion  ·  prototyp DIY</text>
+<g filter="url(#shadow)"><path d="M807 79 L948 56 L1032 93 L891 122 Z" fill="#3a4650" stroke="#67737f" stroke-width="3"/><path d="M807 79 L891 122 V336 L807 298Z" fill="#101820" stroke="#4a5d6b" stroke-width="3"/><path d="M891 122L1032 93V303L891 336Z" fill="#202d38" stroke="#617581" stroke-width="3"/>
+<circle cx="960" cy="155" r="20" fill="#101820" stroke="#98a5ae" stroke-width="5"/><circle cx="960" cy="155" r="8" fill="#d7e2ec"/><circle cx="960" cy="215" r="20" fill="#101820" stroke="#98a5ae" stroke-width="5"/><circle cx="960" cy="215" r="8" fill="#d7e2ec"/><circle cx="960" cy="275" r="20" fill="#101820" stroke="#98a5ae" stroke-width="5"/><circle cx="960" cy="275" r="8" fill="#d7e2ec"/>
+<path d="M754 290L840 310L840 250L754 229Z" fill="#071822" stroke="#47697c" stroke-width="4"/><path d="M767 237L767 296M780 242L780 298M793 245L793 302M806 249L806 305M819 252L819 307" stroke="#2595ae" stroke-width="2" opacity=".8"/>
+<path d="M952 108L1045 63L1101 90" stroke="#c3d5d9" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M1101 90V43" stroke="#181e24" stroke-width="11" stroke-linecap="round"/><path d="M1101 90V43" stroke="#9ba9b6" stroke-width="3" stroke-linecap="round"/><circle cx="952" cy="108" r="8" fill="#c9a45c"/></g>
+<text x="1054" y="342" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#99b1b8">Rysunek poglądowy</text></svg>
