@@ -46,6 +46,14 @@ Nie publikujemy firmware, kluczy, preferencji, dokładnych adresów, działek an
 
 Schemat koncepcyjny: [assets/wiring.svg](assets/wiring.svg). Wersja źródłowa w repozytorium nie jest kopią firmware upstream.
 
+```mermaid
+flowchart LR
+  PV[Panel PV 1 W] --> CH[Zweryfikowana ładowarka 1S CC/CV]
+  CH --> BAT[Chroniony pakiet 1S / opcjonalnie 1S2P]
+  BAT --> NODE[XIAO nRF52840 + Wio-SX1262]
+  NODE --> RF[868 MHz MeshCore]
+```
+
 ## Bezpieczeństwo
 
 Li-ion wymaga właściwego ładowania CC/CV, ochrony, zgodnych ogniw i obudowy. Nie łącz ogniw o różnym napięciu bez wyrównania i weryfikacji. Nie ładuj ogniw Li-ion poniżej 0°C. Panel 1 W i ogniwo 18650 nie gwarantują pracy całonocnej ani ciągłości przekazywania pakietów.
