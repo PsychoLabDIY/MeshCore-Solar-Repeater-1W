@@ -5,8 +5,6 @@
 
 A compact 868 MHz MeshCore repeater built around **Seeed XIAO nRF52840 + Wio-SX1262**. The enclosure and **1 W solar panel** were repurposed from a small outdoor wall lamp. The antenna coaxial feed-through uses an existing wall-mount screw hole rather than a newly drilled hole.
 
-<p align="center"><a href="assets/images/repeater-enclosure-original.jpg"><img src="assets/images/repeater-enclosure-original.jpg" width="210" alt="Actual prototype photograph"></a> &nbsp; <a href="assets/images/antenna-mount-original.jpg"><img src="assets/images/antenna-mount-original.jpg" width="210" alt="Real antenna modification photograph"></a></p>
-
 This is an **operational prototype**, not a proven unattended winter installation. The modified firmware supports **RXPS Balanced level 6, 16-symbol preamble**; a successful direct 0-hop ping and administrator connection were verified on iPhone.
 
 | Specification | Current state |

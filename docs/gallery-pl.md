@@ -2,9 +2,7 @@
 
 ## Fotografie rzeczywistego prototypu
 
-<a href="../assets/images/repeater-enclosure-original.jpg"><img src="../assets/images/repeater-enclosure-original.jpg" alt="Zmontowana obudowa repeatera" width="260"></a> &nbsp; <a href="../assets/images/antenna-mount-original.jpg"><img src="../assets/images/antenna-mount-original.jpg" alt="Przejście SMA przez oryginalny otwór montażowy" width="260"></a>
-
-*Fotografie użytkownika z 16 listopada 2026; w repo opublikowano zmniejszone miniatury. Nie są generowanymi wizualizacjami.*
+Oryginalne fotografie użytkownika nie są dostępne w lokalnej kopii MSI, dlatego nie dodaję kolejnych placeholderów. Poniżej pozostają wyłącznie diagramy SVG.
 
 ![Schemat obudowy](../assets/enclosure.svg)
 
